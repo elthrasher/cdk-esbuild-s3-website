@@ -9,6 +9,7 @@ const buildOptions: BuildOptions = {
   entryPoints: ['ui/index.tsx'],
   loader: { '.js': 'tsx' },
   logLevel: 'warning',
+  minify: true,
   outdir: 'website/js',
   sourcemap: true,
 };

@@ -6,8 +6,8 @@
   "scripts": {
     "build": "npm run clean && npm run build:website",
     "build:website": "ts-node esbuild.ts build",
-    "clean": "rimraf website/js",
-    "deploy": "cdk deploy",
+    "clean": "rimraf cdk.out coverage website/js",
+    "deploy": "npm run clean && cdk deploy",
     "lint": "eslint . --ext=.js,.ts",
     "pretest": "npm run lint",
     "start": "npm run clean && ts-node esbuild.ts",
