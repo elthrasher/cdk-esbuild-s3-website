@@ -12,5 +12,6 @@ Read about it
 - `npm start` run the UI on localhost
 - `npx cdk bootstrap` prepare your environment
 - `npm run deploy` build and deploy your app
-- `npx cdk synth` synthesize the CloudFormation template
-- `npx cdk diff` diff your deployed stack
+- `npm run destroy` destroy the stack
+- `npm run synth` synthesize the CloudFormation template
+- `npm run diff` diff your deployed stack

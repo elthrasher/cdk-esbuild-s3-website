@@ -25,12 +25,13 @@ export class UIStack extends Stack {
         local: {
           tryBundle(outputDir: string) {
             try {
-              execSync('npm run build', execOptions);
-              copySync(join(__dirname, '../website'), outputDir, { recursive: true });
-              return true;
+              execSync('esbuild --version', execOptions);
             } catch /* istanbul ignore next */ {
               return false;
             }
+            execSync('npm run build', execOptions);
+            copySync(join(__dirname, '../website'), outputDir, { ...execOptions, recursive: true });
+            return true;
           },
         },
       },

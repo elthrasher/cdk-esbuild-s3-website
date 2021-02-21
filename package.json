@@ -8,9 +8,12 @@
     "build:website": "ts-node esbuild.ts build",
     "clean": "rimraf cdk.out coverage website/js",
     "deploy": "npm run clean && cdk deploy",
+    "destroy": "cdk destroy",
+    "diff": "cdk diff",
     "lint": "eslint . --ext=.js,.ts",
     "pretest": "npm run lint",
     "start": "npm run clean && ts-node esbuild.ts",
+    "synth": "cdk synth",
     "test": "jest --coverage"
   },
   "keywords": [
@@ -50,7 +53,6 @@
   },
   "dependencies": {
     "@aws-cdk/aws-s3": "1.90.1",
-    "@aws-cdk/aws-s3-assets": "1.90.1",
     "@aws-cdk/aws-s3-deployment": "1.90.1",
     "@aws-cdk/core": "1.90.1",
     "react": "^17.0.1",
