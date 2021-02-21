@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a message 1`] = `
+<div>
+  <h1>
+    esbuild and CDK
+  </h1>
+</div>
+`;
