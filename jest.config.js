@@ -5,7 +5,16 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-  collectCoverageFrom: ['**/*.ts', '!**/*.d.ts', '!cdk.out/**/*', '!bin/**/*', '!esbuild.ts', '!cdk/ui-app.ts'],
+  collectCoverageFrom: [
+    '**/*.ts',
+    '**/*.tsx',
+    '!**/*.d.ts',
+    '!cdk.out/**/*',
+    '!bin/**/*',
+    '!esbuild.ts',
+    '!cdk/ui-app.ts',
+    '!ui/index.tsx',
+  ],
   coverageThreshold: {
     global: {
       branches: 100,
