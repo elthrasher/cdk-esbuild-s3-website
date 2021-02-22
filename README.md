@@ -2,7 +2,7 @@
 
 Build and deploy a static website with React (or whatever) in a single command!
 
-Read about it
+Read about it on [dev.to](https://dev.to/aws-builders/aws-cdk-one-step-s3-websites-with-esbuild-2e3h).
 
 ## Useful commands
 
